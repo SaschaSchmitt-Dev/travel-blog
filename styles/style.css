@@ -1,9 +1,62 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.slider_main {
+  position: relative;
+  background-color: black;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.slider_main input {
+  z-index: 2;
+}
+
+.slider_main_wrapper {
+  z-index: 1;
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  transition: all 0.75s ease-in-out;
+}
+.slider_main_element {
+  width: calc(100% / 4);
+  height: 100%;
+}
+
+.element_one {
+  background-color: blue;
+}
+.element_two {
+  background-color: red;
+}
+.element_three {
+  background-color: green;
+}
+.element_four {
+  background-color: cadetblue;
+}
+
+.slider_main input[value="one"]:checked ~ .slider_radio_wrapper {
+  transform: translateX(calc(100% / 4));
+}
+.slider_main input[value="tow"]:checked ~ .slider_radio_wrapper {
+  transform: translateX(calc(0));
+}
+.slider_main input[value="three"]:checked ~ .slider_radio_wrapper {
+  transform: translateX(calc(-100% / 4));
+}
+.slider_main input[value="three"]:checked ~ .slider_radio_wrapper {
+  transform: translateX(calc(-200% / 4));
 }
