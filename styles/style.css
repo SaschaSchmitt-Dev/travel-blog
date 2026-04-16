@@ -351,8 +351,8 @@ h4 {
 
 details>summary {
   display: flex;
-  align-items:
-    padding: 4px;
+  align-items: center;
+  padding: 4px;
   width: 1200px;
   height: 61px;
   background-color: var(--accordions-bg-color);
