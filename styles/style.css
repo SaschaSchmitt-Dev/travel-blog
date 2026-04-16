@@ -133,6 +133,17 @@ h4 {
   gap: 72px;
 }
 
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.copyright img {
+  width: 20px;
+  height: 20px;
+}
+
 .footer-content-right {
   display: flex;
   flex-direction: row;
