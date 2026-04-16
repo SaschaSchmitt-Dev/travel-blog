@@ -12,11 +12,20 @@ body {
   height: 100dvh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 main {
   flex: 1;
 }
+
+h2 {
+  font-family: 'Arima', latin;
+  font-weight: 700;
+  font-size: 3.25rem;
+  color: var(--global-h2-color);
+}
+
 
 /*Header & Nav*/
 .header {
@@ -62,7 +71,6 @@ main {
   font-size: 1.5rem;
   color: var(--nav-primary-font-color);
 }
-
 
 
 /*Footer*/
@@ -119,11 +127,110 @@ main {
 
 /*Main Sections*/
 
+/*Hero*/
+.hero {
+  height: 515px;
+  background-image: url("../assets/img/index/landing-photo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.main-photo,
+.main-photo-cover-one,
+.main-photo-cover-two {
+  height: 515px;
+}
+
+.hero-slider-main {
+  display: block;
+  z-index: 1;
+}
+
+.hero-slider-slides {
+  position: absolute;
+  display: flex;
+  width: 300%;
+  transition: all 10s ease-in-out;
+  z-index: 10;
+}
+
+.main-photo-cover {
+  display: flex;
+  width: calc(100% / 3);
+  height: 100%;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+/*Content*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px;
+  gap: 120px 120px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+/*Highlights + Slider*/
+.highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+}
+
+.highlights-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.highlights-top img {
+  width: 48px;
+  height: 48px;
+}
+
+.highlights-top p {
+  font-family: 'Palanquin', latin;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--index-main-color);
+  width: 70%;
+  text-align: center;
+}
+
+
+.section-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
 .slider_main {
   position: relative;
-  background-color: black;
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 533px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -140,10 +247,19 @@ main {
   height: 100%;
   position: absolute;
   display: flex;
+  z-index: 1;
   transition: all 0.75s ease-in-out;
 }
 
+.slider_main_element img {
+  width: 100%;
+  height: 533px;
+}
+
 .slider_main_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: calc(100% / 4);
   height: 100%;
 }
@@ -164,23 +280,36 @@ main {
   transform: translateX(calc(-150% / 4));
 }
 
-.element_one {
-  background-color: blue;
+.slider_main input[type="radio"] {
+  appearance: none;
+  margin: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  background: var(--slider-inactive-button-color)
 }
 
-.element_two {
-  background-color: red;
+.slider_main input[type="radio"]::before {
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.15s ease;
+  background: var(--slider-inactive-button-color);
 }
 
-.element_three {
-  background-color: green;
+.slider_main input[type="radio"]:checked {
+  background: var(--slider-active-button-color);
+  margin: 10px;
+  width: 40px;
+  height: 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: grid;
 }
 
-.element_four {
-  background-color: rgb(221, 255, 0);
-}
 
-/*Accordions*/
+/*FAQ*/
 
 details>summary {
   padding: 4px;
@@ -197,3 +326,6 @@ details>p {
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
 }
+
+
+/*Contact*/
