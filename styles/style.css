@@ -23,7 +23,7 @@ h1 {
   font-family: 'Arima', latin;
   font-weight: 700;
   font-size: 4rem;
-  color: var(--global-h2-color);
+  color: var(--global-h1-color);
 }
 
 h2 {
@@ -37,14 +37,14 @@ h3 {
   font-family: 'Palanquin', latin;
   font-weight: 600;
   font-size: 2.5rem;
-  color: var(--global-h2-color);
+  color: var(--global-h3-color);
 }
 
 h4 {
   font-family: 'Arima', latin;
   font-weight: 600;
   font-size: 2rem;
-  color: var(--global-h2-color);
+  color: var(--global-h4-color);
 }
 
 
@@ -333,11 +333,44 @@ h4 {
 
 
 /*FAQ*/
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.accordions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
 
 details>summary {
-  padding: 4px;
+  display: flex;
+  align-items:
+    padding: 4px;
   width: 1200px;
   height: 61px;
+  background-color: var(--accordions-bg-color);
+  border-radius: 12px;
+  padding: 16px 14px;
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+
+  font-family: 'Palanquin', latin;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--index-main-color);
+}
+
+details:open>summary {
+  padding: 4px;
+  width: 1200px;
+  height: auto;
   background-color: var(--accordions-bg-color);
   border-radius: 12px;
   padding: 16px 14px;
@@ -350,8 +383,14 @@ details>summary {
 }
 
 details>p {
-  padding: 4px;
-  margin: 0;
+  width: 1152px;
+  padding: 4px 10px;
+
+  font-family: 'Palanquin', latin;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--index-main-color);
+  line-height: 120%;
 }
 
 
