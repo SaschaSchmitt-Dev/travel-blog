@@ -1,11 +1,20 @@
 .headline-info {
     margin-top: 208px;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .shared-line {
     display: flex;
+    gap: 32px;
 
+}
+
+h1 {
+    line-height: 120%;
 }
 
 
@@ -17,6 +26,7 @@
     align-items: center;
     background-color: var(--text-highlight-bg-color);
     border-radius: 30px;
+    padding: 16px;
 
 }
 
@@ -25,9 +35,43 @@
     width: 120px;
 }
 
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 
+.text-1 {
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
 
+.card-text1 {
+    font-size: 18px;
+    font-weight: 700;
+}
 
+.card-text2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40%;
+}
+
+.card-text3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--global-h4-color);
+    line-height: 120%;
+}
+
+.top5-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
 
 
 
@@ -36,6 +80,7 @@
 .slider {
     height: 300px;
     display: flex;
+    justify-content: center;
 }
 
 .slider-element {
