@@ -1,9 +1,29 @@
 .headline-info {
     margin-top: 208px;
+
+}
+
+.shared-line {
+    display: flex;
+
 }
 
 
+.card-women {
+    height: 389px;
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--text-highlight-bg-color);
+    border-radius: 30px;
 
+}
+
+.women-img {
+    height: 120px;
+    width: 120px;
+}
 
 
 
