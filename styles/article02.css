@@ -1,0 +1,161 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 208px;
+    width: 100%;
+    padding: 0 120px;
+    max-width: 1440px;
+
+}
+
+p {
+    font-family: 'Palanquin', regular;
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 1.5rem;
+    color: var(--article-p-color);
+    padding-top: 8px;
+}
+
+.landing-section {
+    display: flex;
+}
+
+.info-area {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-top-left-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.info-top-left h1 {
+    line-height: 120%;
+}
+
+.info-top-left h3 {
+    line-height: 120%;
+}
+
+.info-top-left p {
+    font-family: 'Palanquin', regular;
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 1.75rem;
+    color: var(--index-main-color);
+    padding-top: 8px;
+}
+
+.info-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.tag-element:not(.t-two) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.t-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.tag-element p {
+    font-size: 1rem;
+}
+
+.t-one img {
+    width: 16px;
+    height: 18px;
+}
+
+.t-two img {
+    width: 20px;
+    height: 7px;
+}
+
+.t-three img {
+    width: 20px;
+    height: 14px;
+}
+
+.t-four img {
+    width: 16px;
+    height: 18px;
+}
+
+.info-top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 272px;
+    height: 389px;
+    border-radius: 30px;
+    padding: 16px;
+
+    background-color: var(--text-highlight-bg-color);
+
+    gap: 16px;
+}
+
+.info-top-right img {
+    width: 120px;
+    height: 120px;
+}
+
+.info-top-right div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 120%;
+}
+
+.info-top-right h4 {
+    font-family: 'Arima', latin;
+    font-size: 1.125rem;
+}
+
+.info-h4-top {
+    font-weight: 700;
+}
+
+.info-h4-bottom {
+    font-weight: 400;
+}
+
+.info-top-right>div>p {
+    font-size: 1.125rem;
+}
+
+.info-top-right>p {
+    font-family: 'Palanquin', regular;
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 1rem;
+    color: var(--index-main-color);
+}
