@@ -47,4 +47,7 @@
     --carousel-active-indicator-bg-color: rgba(78, 164, 135, 1);
     --carousel-inactive-indicator-bg-color: rgba(78, 164, 135, 0.3);
 
+
+    --header-height: 128px;
+
 }
