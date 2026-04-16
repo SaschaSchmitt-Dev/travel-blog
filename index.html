@@ -2,8 +2,8 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Blog Main</title>
 
     <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg">
@@ -18,7 +18,7 @@
     <header class="header">
         <div class="header-navbar">
             <a href="index.html">
-                <img src="./assets/icons/logo.png" alt="Blog Logo" /></a>
+                <img src="./assets/icons/logo.png" alt="Blog Logo"></a>
             <nav class="navbar">
                 <ul>
                     <li><a href="#highlights">Highlights</a></li>
@@ -32,9 +32,7 @@
     <main>
         <section class="hero">
             <div class="hero-slider">
-                <div class="hero-slider-main">
-                </div>
-                <div class="hero-slider-slides">
+                <div class="hero-side-slides">
                     <img class="main-photo-cover three" src="./assets/img/index/landing-photo-cover-03.png"
                         alt="Landing Cover Photo">
                     <img class="main-photo-cover two" src="./assets/img/index/landing-photo-cover-02.png"
@@ -49,7 +47,7 @@
             <section id="highlights" class="highlights">
                 <div class="highlights-top">
                     <div class="section-heading">
-                        <img src="./assets/icons/rocket_launch.png" alt="Rocket" />
+                        <img src="./assets/icons/rocket_launch.png" alt="Rocket">
                         <h2>Highlights</h2>
                     </div>
                     <p>
@@ -60,10 +58,10 @@
                 </div>
 
                 <div class="slider_main">
-                    <input type="radio" name="slider" value="one" checked />
-                    <input type="radio" name="slider" value="two" />
-                    <input type="radio" name="slider" value="three" />
-                    <input type="radio" name="slider" value="four" />
+                    <input type="radio" name="slider" value="one" checked>
+                    <input type="radio" name="slider" value="two">
+                    <input type="radio" name="slider" value="three">
+                    <input type="radio" name="slider" value="four">
 
                     <div class="slider_main_wrapper">
                         <div class="slider_main_element element_one">
@@ -84,7 +82,7 @@
 
             <section id="faq">
                 <div class="section-heading">
-                    <img src="./assets/icons/live_help.png" alt="FAQ" />
+                    <img src="./assets/icons/live_help.png" alt="FAQ">
                     <h2>FAQ</h2>
                 </div>
                 <details>
@@ -113,9 +111,16 @@
 
             <section id="contact">
                 <div class="section-heading">
-                    <img src="./assets/icons/person_pin.png" alt="Contact" />
+                    <img src="./assets/icons/person_pin.png" alt="Contact">
                     <h2>Contact</h2>
                 </div>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
             </section>
         </section>
     </main>

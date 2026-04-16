@@ -229,11 +229,6 @@ h4 {
   gap: 24px;
 }
 
-.highlights-top img {
-  width: 48px;
-  height: 48px;
-}
-
 .highlights-top p {
   font-family: 'Palanquin', latin;
   font-weight: 500;
@@ -243,12 +238,16 @@ h4 {
   text-align: center;
 }
 
-
 .section-heading {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+.section-heading img {
+  width: 48px;
+  height: 48px;
 }
 
 .slider_main {
@@ -337,18 +336,22 @@ h4 {
 
 details>summary {
   padding: 4px;
-  width: 200px;
-  background-color: #eeeeee;
-  border: none;
-  box-shadow: 1px 1px 2px #bbbbbb;
+  width: 1200px;
+  height: 61px;
+  background-color: var(--accordions-bg-color);
+  border-radius: 12px;
+  padding: 16px 14px;
   cursor: pointer;
+
+  font-family: 'Palanquin', latin;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--index-main-color);
 }
 
 details>p {
-  background-color: #eeeeee;
   padding: 4px;
   margin: 0;
-  box-shadow: 1px 1px 2px #bbbbbb;
 }
 
 
