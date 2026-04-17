@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Blog Main</title>
 
-    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg">
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
-
 </head>
 
 <body>
     <header class="header">
         <div class="header-navbar">
-            <a href="index.html">
-                <img src="./assets/icons/logo.png" alt="Blog Logo"></a>
+            <a class="logo-link" href="index.html">
+                <img src="./assets/icons/logo.png" alt="Blog Logo">
+            </a>
+
             <nav class="navbar">
                 <ul>
                     <li><a href="#highlights">Highlights</a></li>
@@ -31,14 +32,28 @@
 
     <main>
         <section class="hero">
-            <div class="hero-slider">
-                <div class="hero-side-slides">
-                    <img class="main-photo-cover three" src="./assets/img/index/landing-photo-cover-03.png"
-                        alt="Landing Cover Photo">
-                    <img class="main-photo-cover two" src="./assets/img/index/landing-photo-cover-02.png"
-                        alt="Landing Cover Photo">
-                    <img class="main-photo-cover one" src="./assets/img/index/landing-photo-cover-01.png"
-                        alt="Landing Cover Photo">
+            <div class="hero-inner">
+                <div class="hero-image-wrap">
+                    <img class="hero-image" src="./assets/img/index/landing-photo.png" alt="Cappadocia">
+                </div>
+
+                <div class="hero-yellow-panel"></div>
+
+                <div class="hero-content">
+                    <h1>Cappadocia</h1>
+                    <p>
+                        From sunrise balloons to hidden cave dwellings,
+                        every moment feels unreal in the best way.
+                    </p>
+                </div>
+
+                <div class="hero-badge">
+                    <div class="hero-badge-ring">
+                        <img src="./assets/icons/Cappadocia-Turkey.png" alt="Cappadocia Turkey badge text">
+                    </div>
+                    <div class="hero-badge-center">
+                        <img src="./assets/icons/Turkey.png" alt="Turkey flag">
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,32 +65,91 @@
                         <img src="./assets/icons/rocket-launch.png" alt="Rocket">
                         <h2>Highlights</h2>
                     </div>
+
                     <p>
-                        From the vibrant cultures of Asia to the sun-drenched islands of the
-                        Caribbean and the serene landscapes of Scandinavia, each destination
-                        offers a distinct way to explore the world.
+                        From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean and the serene
+                        landscapes of Scandinavia, each destination offers a distinct way to explore the world.
                     </p>
                 </div>
 
                 <div class="slider-main">
-                    <input type="radio" name="slider" value="one" checked>
-                    <input type="radio" name="slider" value="two">
-                    <input type="radio" name="slider" value="three">
-                    <input type="radio" name="slider" value="four">
+                    <input type="radio" name="slider" id="slide-one" checked>
+                    <input type="radio" name="slider" id="slide-two">
+                    <input type="radio" name="slider" id="slide-three">
+                    <input type="radio" name="slider" id="slide-four">
 
                     <div class="slider-main-wrapper">
-                        <div class="slider-main-element element-one">
-                            <img src="./assets/img/index/header-photo01.png" alt="Photo 01">
-                        </div>
-                        <div class="slider-main-element element-two">
-                            <img src="./assets/img/index/header-photo02.png" alt="Photo 02">
-                        </div>
-                        <div class="slider-main-element element-three">
-                            <img src="./assets/img/index/header-photo03.png" alt="Photo 03">
-                        </div>
-                        <div class="slider-main-element element-four">
-                            <img src="./assets/img/index/header-photo04.png" alt="Photo 04">
-                        </div>
+                        <article class="slider-main-element">
+                            <a href="./article04.html" class="slide-card">
+                                <img src="./assets/img/index/header-photo04.png" alt="Mountain Fuji">
+                                <div class="slide-overlay overlay-fuji">
+                                    <div class="slide-overlay-box">
+                                        <h3>Mountain Fuji</h3>
+                                        <p>
+                                            The most iconic mountain and an active volcano located about 100 kilometers
+                                            southwest of Tokyo. Written with the characters for “wealth” and “samurai,”
+                                            Fuji’s name evokes a sense of strength, honor, and enduring prestige.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="slider-main-element">
+                            <a href="./article03.html" class="slide-card">
+                                <img src="./assets/img/index/header-photo03.png"
+                                    alt="Pattaya Pulse: Food, Sun and Neon Nights">
+                                <div class="slide-overlay overlay-pattaya">
+                                    <div class="slide-overlay-box">
+                                        <h3>Pattaya Pulse:<br>Food, Sun and Neon Nights</h3>
+                                        <p>
+                                            From bustling promenades to nearby islands, the city offers an energetic and
+                                            diverse escape. Discover Pattaya City, with vibrant nightlife and rich
+                                            cultural landmarks.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="slider-main-element">
+                            <a href="./article02.html" class="slide-card">
+                                <img src="./assets/img/index/header-photo02.png"
+                                    alt="Copenhagen in 3 Days: Big Experiences, Smart Spending">
+                                <div class="slide-overlay overlay-copenhagen">
+                                    <div class="slide-overlay-box">
+                                        <h3>Copenhagen in 3 Days: Big<br>Experiences, Smart Spending</h3>
+                                        <p>
+                                            Discover Copenhagen, where historic charm meets modern design, vibrant
+                                            cycling culture and waterfront living.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="slider-main-element">
+                            <a href="./article01.html" class="slide-card">
+                                <img src="./assets/img/index/header-photo01.png"
+                                    alt="The World’s Most Breathtaking Beaches">
+                                <div class="slide-overlay overlay-beach">
+                                    <div class="slide-overlay-box">
+                                        <h3>The World’s Most Breathtaking<br>Beaches</h3>
+                                        <p>
+                                            From powder-soft white sands to dramatic coastlines kissed by turquoise
+                                            waves, these beaches are more than destinations – they’re feelings.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="slider-dots">
+                        <label for="slide-one"></label>
+                        <label for="slide-two"></label>
+                        <label for="slide-three"></label>
+                        <label for="slide-four"></label>
                     </div>
                 </div>
             </section>
@@ -89,54 +163,79 @@
                 <div class="accordions">
                     <details>
                         <summary>What’s the story behind my travel blog?</summary>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et ab, quo aliquam esse
-                            corrupti aut deleniti sit nostrum obcaecati fuga quod. Explicabo, rem qui aspernatur aliquid
-                            beatae praesentium harum!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                            porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a
+                            enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
+                        </p>
                     </details>
+
                     <details>
                         <summary>How do I plan, document, and share my travels?</summary>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et ab, quo aliquam esse
-                            corrupti aut deleniti sit nostrum obcaecati fuga quod. Explicabo, rem qui aspernatur aliquid
-                            beatae praesentium harum!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                            porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a
+                            enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
+                        </p>
                     </details>
+
                     <details>
                         <summary>How can brands, companies, or fellow creators collaborate with me or get in touch?
                         </summary>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et ab, quo aliquam esse
-                            corrupti aut deleniti sit nostrum obcaecati fuga quod. Explicabo, rem qui aspernatur aliquid
-                            beatae praesentium harum!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                            porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a
+                            enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
+                        </p>
                     </details>
+
                     <details>
                         <summary>How can readers support this blog and the work behind it?</summary>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et ab, quo aliquam esse
-                            corrupti aut deleniti sit nostrum obcaecati fuga quod. Explicabo, rem qui aspernatur aliquid
-                            beatae praesentium harum!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                            porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a
+                            enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
+                        </p>
                     </details>
                 </div>
-
-                <!--                 <details class="group rounded-xl border border-[#283039] bg-surface-dark" open="">
-                        <summary class="flex cursor-pointer items-center justify-between p-5 list-none">
-                            <span class="text-white font-medium">Who are these bootcamps for?</span>
-                            <span class="material-symbols-outlined text-gray-400 group-open:rotate-180 transition-transform">expand-more</span>
-                        </summary>
-                        <div class="px-5 pb-5 pt-0">
-                            <p class="text-slate-400 text-sm">Our bootcamps are designed for anyone looking to start or advance their career in tech. This includes complete beginners with no coding experience, career changers looking to transition into tech, working professionals wanting to upskill, students seeking practical skills alongside their education, and entrepreneurs wanting to understand technical aspects of their business.</p>
-                        </div>
-                    </details> -->
-
             </section>
 
-            <section id="contact">
+            <section id="contact" class="contact">
                 <div class="section-heading">
                     <img src="./assets/icons/person-pin.png" alt="Contact">
-                    <h2>Contact</h2>
+                    <h2>Contact form</h2>
                 </div>
-                <form action="/action-page.php">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <input type="submit" value="Submit">
+
+                <p class="contact-intro">
+                    Have a question or an idea to collaborate?<br>
+                    Get in touch—I’d love to hear from you and explore how we can work together.
+                </p>
+
+                <form class="contact-form" action="#">
+                    <div class="contact-row">
+                        <div class="contact-field">
+                            <label for="fname">What’s your name?</label>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="email">What’s your email?</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="contact-field contact-field-message">
+                        <label for="message">How can I help?</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+
+                    <div class="contact-accept">
+                        <input type="checkbox" id="privacy" name="privacy">
+                        <label for="privacy">I’ve read the privacy policy and agree to the processing of my data as
+                            outlined.</label>
+                    </div>
+
+                    <button type="submit" class="contact-button">Send</button>
                 </form>
             </section>
         </section>
@@ -149,18 +248,19 @@
                     <img src="./assets/icons/copyright.png" alt="copyright">
                     <p>Travel Blog 2026</p>
                 </div>
+
                 <a href="#">Imprint</a>
                 <a href="#">Cookie Preferences</a>
             </div>
+
             <div class="footer-content-right">
-                <img src="./assets/icons/Tiktok-icon.png" alt="tiktok">
-                <img src="./assets/icons/youtube.png" alt="youtube">
-                <img src="./assets/icons/facebook.png" alt="facebook">
-                <img src="./assets/icons/Instagram-logo-2016.png" alt="insta">
+                <a href="#"><img src="./assets/icons/Tiktok-icon.png" alt="tiktok"></a>
+                <a href="#"><img src="./assets/icons/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="./assets/icons/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="./assets/icons/Instagram-logo-2016.png" alt="instagram"></a>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
