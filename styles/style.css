@@ -360,7 +360,7 @@ h4 {
   gap: 32px;
 }
 
-details>summary {
+.accordions details>summary {
   display: flex;
   align-items: center;
   padding: 4px;
@@ -378,7 +378,7 @@ details>summary {
   color: var(--index-main-color);
 }
 
-details:open>summary {
+.accordions details:open>summary {
   padding: 4px;
   width: 1200px;
   height: auto;
@@ -393,7 +393,7 @@ details:open>summary {
   color: var(--index-main-color);
 }
 
-details>p {
+.accordions details>p {
   width: 1152px;
   padding: 4px 10px;
 
