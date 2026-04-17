@@ -122,6 +122,7 @@ h4 {
   font-weight: 400;
   font-size: 1rem;
   color: var(--nav-primary-font-color);
+  padding: 0;
 }
 
 .footer-content-left {
@@ -135,6 +136,7 @@ h4 {
 
 .copyright {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   gap: 4px;
 }

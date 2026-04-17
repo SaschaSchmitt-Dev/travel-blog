@@ -27,6 +27,7 @@
     /*Slider Buttons*/
     --slider-active-button-color: rgba(241, 201, 83, 1);
     --slider-inactive-button-color: rgba(255, 255, 255, 1);
+    --slider-text-bg-color: rgba(255, 255, 255, 0.1);
 
     /*Style green-yellow*/
     --button1-font-color: rgba(241, 201, 83, 1);

@@ -1,5 +1,6 @@
 main {
-    margin: 208px 120px;
+    margin-top: 208px;
+    padding: 0 120px;
 }
 
 .landing-content-right {
@@ -12,11 +13,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.woman-img {
-    margin: 0;
-    padding: 0;
+    gap: 16px;
 }
 
 .author-title {
@@ -42,12 +39,41 @@ main {
 
 .landing-comunity {
     gap: 32px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.landing-comunity-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.landing-comunity-img1 {
+    width: 16px;
+    height: 18px;
+}
+
+.landing-comunity-img2 {
+    width: 20px;
+    height: 7px;
+}
+
+.landing-comunity-img3 {
+    width: 20px;
+    height: 14px;
+}
+
+.landing-comunity-img4 {
+    width: 16px;
+    height: 18px;
 }
 
 .landing-content-container {
     display: flex;
-    flex-direction: column;
     flex-direction: row;
+    justify-content: center;
 }
 
 .title-info {
@@ -55,6 +81,22 @@ main {
     font-family: 'Palanquin', latin;
     line-height: 110%;
     color: var(--meta-p-color);
+}
+
+.pattaya-title {
+    line-height: 120%;
+}
+
+.landing-article {
+    margin-top: 48px;
+    font-family: 'Palanquin', latin;
+    font-size: 1.75rem;
+    color: var(--article-p-color);
+    line-height: 120%;
+}
+
+.landing-content-left {
+   
 }
 
 
