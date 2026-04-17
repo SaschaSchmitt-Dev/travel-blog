@@ -1,5 +1,6 @@
 main {
-    margin: 208px 120px;
+    margin-top: 208px;
+    padding: 0 120px;
 }
 
 .landing-content-right {
@@ -12,11 +13,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.woman-img {
-    margin: 0;
-    padding: 0;
+    gap: 16px;
 }
 
 .author-title {
@@ -75,8 +72,8 @@ main {
 
 .landing-content-container {
     display: flex;
-    flex-direction: column;
     flex-direction: row;
+    justify-content: center;
 }
 
 .title-info {
@@ -96,6 +93,10 @@ main {
     font-size: 1.75rem;
     color: var(--article-p-color);
     line-height: 120%;
+}
+
+.landing-content-left {
+   
 }
 
 
