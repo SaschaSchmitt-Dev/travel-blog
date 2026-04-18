@@ -121,7 +121,7 @@ main {
 
 .rain-periods-in-pattaya {
     max-width: 1200px fill;
-    height: 100vh;
+    height: 756px;
     margin-top: 88px;
 }
 
@@ -158,6 +158,57 @@ main {
     color: var(--article-p-color);
 }
 
+.statistic-section {
+    max-width: 1200px;
+    height: 100dvh;
+    margin-top: 88px;
+}
 
+.statistic-content {
+    display: flex;
+    justify-content: space-between;
+}
 
+.statistic-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    max-width: 519px;
+}
 
+.statistic-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    max-width: 519px;
+}
+
+.statistic-content p {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: 'Palanquin', latin;
+    color: var(--article-p-color);
+}
+
+.static-content-article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.statistic-article {
+    margin-top: 88px;
+}
+
+.statistic-article p {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: 'Palanquin', latin;
+    color: var(--article-p-color);
+}
