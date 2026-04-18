@@ -260,6 +260,7 @@ h4 {
   border-right: solid 1px white;
   border-left: solid 1px white;
 }
+
 .highlights-slider-text h3 {
   display: flex;
   color: white;
@@ -272,6 +273,7 @@ h4 {
   letter-spacing: 0%;
   margin-bottom: 8px;
 }
+
 .highlights-slider-text p {
   width: 820px;
   height: 93px;
@@ -280,6 +282,7 @@ h4 {
   font-size: 28px;
   line-height: 110%;
 }
+
 .section-heading {
   display: flex;
   flex-direction: row;
@@ -330,19 +333,19 @@ h4 {
   height: 533px;
 }
 
-.slider-main input[value="one"]:checked ~ .slider-main-wrapper {
+.slider-main input[value="one"]:checked~.slider-main-wrapper {
   transform: translateX(calc(150% / 4));
 }
 
-.slider-main input[value="two"]:checked ~ .slider-main-wrapper {
+.slider-main input[value="two"]:checked~.slider-main-wrapper {
   transform: translateX(calc(50% / 4));
 }
 
-.slider-main input[value="three"]:checked ~ .slider-main-wrapper {
+.slider-main input[value="three"]:checked~.slider-main-wrapper {
   transform: translateX(calc(-50% / 4));
 }
 
-.slider-main input[value="four"]:checked ~ .slider-main-wrapper {
+.slider-main input[value="four"]:checked~.slider-main-wrapper {
   transform: translateX(calc(-150% / 4));
 }
 
@@ -391,16 +394,35 @@ h4 {
   gap: 32px;
 }
 
-.accordions details > summary {
+.accordions details {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 4px;
-  width: 1200px;
-  height: 61px;
   background-color: var(--accordions-bg-color);
   border-radius: 12px;
   padding: 16px 14px;
-  margin: 20px 0 0 20px;
+  animation: 2s ease-in-out;
+}
+
+.accordions details:open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accordions-bg-color);
+  border-radius: 12px;
+  padding: 16px 14px;
+}
+
+.accordions summary {
+  background-color: var(--accordions-bg-color);
+  border-radius: 12px;
+}
+
+.accordions details>summary {
+  display: flex;
+  width: 1200px;
+
+  background-color: var(--accordions-bg-color);
   cursor: pointer;
 
   font-family: "Palanquin", latin;
@@ -409,13 +431,10 @@ h4 {
   color: var(--index-main-color);
 }
 
-.accordions details:open > summary {
-  padding: 4px;
+.accordions details:open>summary {
   width: 1200px;
   height: auto;
   background-color: var(--accordions-bg-color);
-  border-radius: 12px;
-  padding: 16px 14px;
   cursor: pointer;
 
   font-family: "Palanquin", latin;
@@ -424,15 +443,15 @@ h4 {
   color: var(--index-main-color);
 }
 
-.accordions details > p {
-  width: 1152px;
+.accordions details>p {
   padding: 4px 10px;
-
   font-family: "Palanquin", latin;
   font-weight: 500;
   font-size: 1rem;
   color: var(--index-main-color);
+  background-color: var(--accordions-p-bg-color);
   line-height: 120%;
+  border-radius: 5px;
 }
 
 /*Contact*/
