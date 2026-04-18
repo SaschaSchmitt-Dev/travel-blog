@@ -212,3 +212,91 @@ main {
     font-family: 'Palanquin', latin;
     color: var(--article-p-color);
 }
+
+/*share section*/
+.share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 120px;
+}
+
+.share-section-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.share-section-center-text {
+    position: relative;
+    width: 100%;
+    max-width: 463px;
+    height: auto;
+    text-align: center;
+}
+
+.share-section-center-text p {
+    font-family: 'Arima', latin;
+    font-size: 1.5rem;
+    color: var(--article-alternate-p-color);
+}
+
+.share-section-center-text-overlay {
+    position: absolute;
+    top: 50px;
+}
+
+.share-button details {
+    display: flex;
+    align-items: center;
+}
+
+.share-button details>summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 273px;
+    padding-left: auto;
+
+}
+
+.share-button details:open>summary {
+    width: 100%;
+    max-width: 273px;
+
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.share-button details:open>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.share-button-inner-icon {
+    gap: 10px;
+}
+
+.share-button-inner-links a {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arima', latin;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: var(--global-link-color);
+}
+
+details.shared-buttons-outer-icon[open] summary::after {
+    content: url(../assets/icons/Share-button-smaller.png);
+}
+
+details.shared-buttons-outer-icon:not([open]) summary::after {
+    content: url(../assets/icons/share-button.png);
+}
