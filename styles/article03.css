@@ -20,6 +20,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 16px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .landing-content-right div {
@@ -43,6 +45,7 @@ main {
     font-size: 1rem;
     font-family: 'Palanquin', latin;
     line-height: 120%;
+    color: var(--global-h4-color);
 }
 
 .landing-comunity {
@@ -110,17 +113,14 @@ main {
 
 .landing-section {
     max-width: 1200px fill;
-    height: 611px;
 }
 
 .landing-content {
     max-width: 1200px fill;
-    height: 611px;
 }
 
 .rain-periods-in-pattaya {
     max-width: 1200px fill;
-    height: 756px;
     margin-top: 88px;
 }
 
@@ -143,6 +143,8 @@ main {
     height: 436px;
     border-radius: 53px;
     margin-top: 24px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .rain-article {
@@ -159,7 +161,6 @@ main {
 
 .statistic-section {
     max-width: 1200px;
-    height: 100dvh;
     margin-top: 88px;
 }
 
@@ -307,3 +308,48 @@ details.shared-buttons-outer-icon[open] summary::after {
 details.shared-buttons-outer-icon:not([open]) summary::after {
     content: url(../assets/icons/share-button.png);
 }
+
+@media (max-width: 1279px) {
+    .statistic-content {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .landing-content-right {
+        height: 389px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 15px;
+    }
+
+    .landing-content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-content-right {
+        max-width: none;
+        margin-top: 24px;
+    }
+
+    .landing-comunity {
+        margin-top: 24px;
+    }
+
+    .title-info {
+        margin-top: 24px;
+    }
+
+    .rain-content img {
+        width: 345px;
+        height: 183px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 480px) {}
