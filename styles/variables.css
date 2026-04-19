@@ -9,6 +9,8 @@
     --global-h2-color: rgba(78, 164, 135, 1);
     --global-h3-color: rgba(78, 164, 135, 1);
     --global-h4-color: rgba(84, 55, 13, 1);
+    --global-h5-color: rgba(84, 55, 13, 1);
+    --global-label-color: rgba(84, 55, 13, 1);
     --global-link-color: rgba(78, 164, 135, 1);
     --article-p-color: rgba(61, 61, 61, 1);
     /* Datum / Reading-Time / Read / Shared */
@@ -20,14 +22,17 @@
     /*Background-Colors*/
     --nav-footer-bg-color: rgba(78, 164, 135, 1);
     --accordions-bg-color: rgba(241, 201, 83, 1);
+    --accordions-p-bg-color: rgba(255, 255, 255, 1);
     --text-highlight-bg-color: rgba(78, 164, 135, 0.2);
+
+    /*Shadows*/
+    --slider-drop-shadow-color: rgba(0, 0, 0, 0.25);
 
 
     /*Buttons*/
     /*Slider Buttons*/
     --slider-active-button-color: rgba(241, 201, 83, 1);
     --slider-inactive-button-color: rgba(255, 255, 255, 1);
-    --slider-text-bg-color: rgba(255, 255, 255, 0.1);
 
     /*Style green-yellow*/
     --button1-font-color: rgba(241, 201, 83, 1);
