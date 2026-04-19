@@ -350,6 +350,79 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         height: 183px;
         border-radius: 30px;
     }
+
+    .info-landing-left h1 {
+        font-size: 40px;
+    }
+
+    .info-landing-left h3 {
+        font-size: 20px;
+    }
+
+    .info-landing-left p {
+        font-size: 18px;
+    }
+
+    .landing-comunity-content p {
+        font-size: 16px;
+    }
+
+    .landing-comunity-content {
+        gap: 6px;
+    }
+
+    .landing-article p {
+        font-size: 1rem;
+    }
+
+    .rain-periods-in-pattaya {
+        margin-top: 32px;
+    }
+
+    .rain-content h4 {
+        font-size: 20px;
+    }
+
+    .rain-article p {
+        font-size: 1rem;
+    }
+
+    .statistic-section {
+        margin-top: 32px;
+    }
+
+    .static-content-article h4 {
+        font-size: 20px;
+    }
+
+    .static-content-article p {
+        font-size: 1rem;
+    }
+
+    .statistic-content-left img {
+        width: 343px;
+        height: 311px;
+        border-radius: 30px;
+    }
+
+    .statistic-content-right img {
+        width: 343px;
+        height: 311px;
+        border-radius: 30px;
+    }
+
+    .statistic-article p {
+        font-size: 1rem;
+    }
+
+    .share-section-center-text p {
+        font-size: 18px;
+    }
+
+    .share-section-center-text-overlay img {
+        width: 50px;
+        height: 30.41px;
+    }
 }
 
 @media (max-width: 480px) {}
