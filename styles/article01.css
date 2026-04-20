@@ -1,16 +1,23 @@
-main {
-    margin-top: 208px;
-    margin-left: 120px;
-
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
-.headline-info {
-    margin-bottom: 88px;
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 208px;
+    padding: 0px 120px 0px 120px;
+    gap: 88px;
+}
+
+/*headline-section*/
+
+.headline-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    width: 1221px;
 }
 
 .shared-line {
@@ -22,7 +29,6 @@ main {
 h1 {
     line-height: 120%;
 }
-
 
 .card-women {
     height: 389px;
@@ -66,7 +72,8 @@ h1 {
     line-height: 40%;
 }
 
-.card-text3 {
+.card-women p {
+    font-family: 'Palanquin', regular;
     font-size: 16px;
     font-weight: 400;
     color: var(--global-h4-color);
@@ -86,10 +93,14 @@ h1 {
     margin-bottom: 88px;
 }
 
+
+/*slider-section*/
+
 .slider-element {
     z-index: 1;
     width: 300px;
     height: 440px;
+    margin: 0px -50px;
 
     transform: perspective(300px) rotateY(16deg) translateX(0);
     transform-origin: 50% 50%;
@@ -98,21 +109,13 @@ h1 {
 
 .slider-element:hover {
     z-index: 2;
-
     transform: perspective(300px) rotateY(0deg) translateX(0);
-
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25),
-
+    transform: scale(110%);
+    margin: 0px 50px;
 }
 
 .slider-element:hover~.slider-element {
     transform: perspective(300px) rotateY(-16deg) translateX(20px);
-
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25),
-}
-
-.lorembox {
-    margin-bottom: 88px;
 }
 
 .box {
@@ -127,6 +130,19 @@ h1 {
     line-height: 120%;
 }
 
+.loremtext span {
+    font-weight: 700;
+}
+
+
+/*protipps-section*/
+
+.protipps-section {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0 0 51px;
+}
+
 .protipps-box {
     height: 66px;
     width: 196px;
@@ -136,17 +152,89 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 80px;
+
 }
 
 .protipps-box img {
     height: 50px;
     width: 50px;
     rotate: 13.67deg;
+
 }
 
 .protipps-text {
     font-size: 28px;
     font-weight: 700;
     color: var(--button1-font-color);
+}
+
+.protipps-main {
+    background-color: var(--text-highlight-bg-color);
+    width: 1083px;
+    height: 195px;
+    padding: 26px 16px 24px 16px;
+    border-radius: 30px;
+    margin-left: 47px;
+
+}
+
+
+/*share section*/
+
+.share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 88px;
+}
+
+.share-section-center {
+    height: 154px;
+    width: 493px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-text-center {
+    position: relative;
+    width: 100%;
+    max-width: 463px;
+    height: auto;
+    text-align: center;
+}
+
+.share-text-center p {
+    font-family: 'Arima', latin;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--article-alternate-p-color);
+}
+
+.share-section-lineimg {
+    position: absolute;
+    top: 50px;
+
+}
+
+
+.sharebutton {
+    height: 48px;
+    width: 158px;
+    border-radius: 40px;
+    background-color: var(--cb-active-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sharebutton p {
+    font-family: 'Arima', latin;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--global-h1-color);
+    letter-spacing: 5%;
+
 }
