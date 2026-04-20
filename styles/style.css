@@ -1,3 +1,7 @@
+:root {
+  interpolate-size: allow-keywords;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -326,29 +330,25 @@ h5 {
 }
 
 .accordions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   gap: 32px;
 }
 
 .accordions details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--accordions-bg-color);
   border-radius: 12px;
   padding: 16px 14px;
+
+  overflow: hidden;
 }
 
-.accordions details:open {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--accordions-bg-color);
-  border-radius: 12px;
-  padding: 16px 14px;
+.accordions details::details-content {
+  block-size: 0;
+  transition: content-visibility 1s allow-discrete, opacity 1s, block-size 1s;
+}
+
+.accordions details[open]::details-content {
+  block-size: auto;
 }
 
 .accordions details>summary {
@@ -364,18 +364,7 @@ h5 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--index-main-color);
-}
-
-.accordions details:open>summary {
-  width: 1200px;
-  height: auto;
-  background-color: var(--accordions-bg-color);
-  cursor: pointer;
-
-  font-family: "Palanquin", latin;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--index-main-color);
+  transition: block-size 1s;
 }
 
 .accordions summary::after {
@@ -385,14 +374,14 @@ h5 {
 .accordions summary::before,
 .accordions summary::after {
   position: absolute;
-  right: 0;
+  right: 32px;
   transform: translateY(-50%);
 }
 
 .accordions summary::after {
   transform: rotate(-180deg);
   transform-origin: 50% 50%;
-  transition: all 500ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .accordions [open] summary::after {
