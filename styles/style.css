@@ -178,6 +178,7 @@ h5 {
   align-items: center;
   justify-content: center;
   gap: 88px;
+  width: 100%;
 }
 
 .highlights-top {
@@ -186,6 +187,7 @@ h5 {
   align-items: center;
   text-align: center;
   gap: 24px;
+  max-width: 979px;
 }
 
 .section-heading {
