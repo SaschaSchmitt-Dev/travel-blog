@@ -186,18 +186,20 @@
                 <div class="contact-inputs">
                     <div class="contact-inputs-top">
                         <div class="contact-top-one">
-                            <div class="contact-top-left cto-label">
-                                <label for="fname">What's your name?</label>
-                                <input type="text" id="fname" name="fname" /><br /><br />
+                            <div class="contact-top-textfield cto-label">
+                                <label for="name">What's your name?</label>
+                                <input type="text" id="name" name="name"></input>
                             </div>
-                            <div class="contact-top-right cto-label">
-                                <label for="lname">What's your email?</label>
-                                <input type="text" id="lname" name="lname" /><br /><br />
+                            <div class="contact-top-textfield cto-label">
+                                <label for="email">What's your email?</label>
+                                <input type="email" id="email" name="email"></input>
                             </div>
                         </div>
-                        <div class="contact-top-two cto-label-two">
-                            <label for="fname">How can i help?</label>
-                            <input type="text" id="fname" name="fname" /><br /><br />
+                        <div class="contact-top-two">
+                            <div class="contact-top-textfield cto-label-two">
+                                <label for="help">How can i help?</label>
+                                <textarea type="text" id="help" name="help"></textarea>
+                            </div>
                         </div>
                     </div>
 
@@ -206,11 +208,11 @@
                             <label class="checkbox-container">I've read the
                                 <a href="">privacy policy</a>
                                 and agree to the processing of my data as outlined.
-                                <input type="checkbox" id="cib-checkbox" required>
+                                <input type="checkbox" id="checkbox-submit" class="checkbox-submit" required></input>
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Send" class="submit-button" />
                     </div>
                 </div>
             </section>

@@ -178,7 +178,6 @@ h5 {
   align-items: center;
   justify-content: center;
   gap: 88px;
-  width: 100%;
 }
 
 .highlights-top {
@@ -444,7 +443,15 @@ h5 {
   gap: 16px;
 }
 
-.contact label {
+.contact-top-textfield {
+  width: 100%;
+}
+
+.cto-label {
+  max-width: 517px;
+}
+
+.contact-top-textfield label {
   font-family: 'Palanquin', regular;
   font-weight: 500;
   line-height: 120%;
@@ -452,20 +459,23 @@ h5 {
   color: var(--global-label-color);
 }
 
-.cto-label {
-  max-width: 517px
+.contact-top-textfield input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 17px 0;
+  width: 100%;
+  max-width: 1096px;
+  font-family: 'Palanquin', regular;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 1.5rem;
+  color: var(--form-message-fill-font-color);
+  resize: none;
 }
 
-.cto-label,
-.cto-label-two {
-  width: 100%;
-}
-
-.cto-label input,
-.cto-label-two input {
-  width: 100%;
+.contact-top-textfield input:focus {
   outline: none;
-  border: 0;
+  border-bottom: 1px solid black;
 }
 
 .contact-inputs-top {
@@ -475,22 +485,43 @@ h5 {
   gap: 64px;
 }
 
-.contact-inputs-top label {
-  display: block;
+.contact-top-textfield textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 17px 0;
+  width: 100%;
+  max-width: 1096px;
+  font-family: 'Palanquin', regular;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 1.5rem;
+  color: var(--form-message-fill-font-color);
+  resize: none;
+  field-sizing: content;
 }
 
-.contact-inputs-top input[type=text] {
-  width: 100%;
+.contact-top-textfield textarea:focus {
+  outline: none;
   border-bottom: 1px solid black;
 }
 
-.contact-top-one {
+.contact-inputs-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.contact-top-one,
+.contact-top-two {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1100px;
 }
 
+
+/*Checkbox*/
 .contact-inputs-bottom {
   display: flex;
   flex-direction: column;
@@ -498,8 +529,6 @@ h5 {
   gap: 32px;
 }
 
-
-/*Checkbox*/
 .cib-checkbox label {
   font-family: 'Palanquin', regular;
   font-weight: 400;
@@ -580,6 +609,21 @@ h5 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.checkbox-submit {
+  color: var(--error-mesage-font-color);
+}
+
+.submit-button {
+  background-color: inherit;
+  width: 139px;
+  border-radius: 40px;
+  height: 48px;
+  font-family: "Arima", latin;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--send-button-color);
 }
 
 

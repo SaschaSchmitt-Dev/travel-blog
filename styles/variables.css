@@ -14,10 +14,12 @@
     --global-link-color: rgba(78, 164, 135, 1);
     --article-p-color: rgba(61, 61, 61, 1);
     --slider-font-color: rgba(255, 255, 255, 1);
+    --send-button-color: rgba(115, 115, 115, 1);
+    --error-mesage-font-color: rgba(185, 16, 47, 1);
     /* Datum / Reading-Time / Read / Shared */
     --article-alternate-p-color: rgba(84, 55, 13, 1);
     --form-message-fill-font-color: rgba(78, 164, 135, 1);
-    --error-mesage-font-color: rgba(185, 16, 47, 1);
+
 
 
     /*Background-Colors*/
