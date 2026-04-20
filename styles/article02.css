@@ -316,7 +316,7 @@ p {
 }
 
 details.shared-buttons-outer-icon[open] summary::after {
-    content: url(../assets/icons/Share-button-smaller.png);
+    content: url(../assets/icons/share-button-smaller.png);
 }
 
 details.shared-buttons-outer-icon:not([open]) summary::after {
