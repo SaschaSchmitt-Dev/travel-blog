@@ -79,26 +79,6 @@ p {
     padding: 0;
 }
 
-.t-one img {
-    width: 16px;
-    height: 18px;
-}
-
-.t-two img {
-    width: 20px;
-    height: 7px;
-}
-
-.t-three img {
-    width: 20px;
-    height: 14px;
-}
-
-.t-four img {
-    width: 16px;
-    height: 18px;
-}
-
 .info-top-right {
     display: flex;
     flex-direction: column;
@@ -235,6 +215,7 @@ p {
     left: -50px;
 }
 
+
 /*share section*/
 .share-section {
     display: flex;
@@ -275,24 +256,34 @@ p {
     align-items: center;
 }
 
+.share-button details::details-content {
+    inline-size: 0;
+    overflow: hidden;
+    transition: content-visibility 1s allow-discrete, inline-size 1s;
+}
+
+.share-button details[open]::details-content {
+    inline-size: auto;
+}
+
 .share-button details>summary {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 273px;
-    padding-left: auto;
-
+    padding-right: 10px;
 }
 
 .share-button details:open>summary {
-    width: 100%;
-    max-width: 273px;
-
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
+}
+
+.share-button details>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .share-button details:open>div {
@@ -303,6 +294,7 @@ p {
 
 .share-button-inner-icon {
     gap: 10px;
+    width: auto;
 }
 
 .share-button-inner-links a {
