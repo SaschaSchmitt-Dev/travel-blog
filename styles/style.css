@@ -178,6 +178,7 @@ h5 {
   align-items: center;
   justify-content: center;
   gap: 88px;
+  width: 100%;
 }
 
 .highlights-top {
