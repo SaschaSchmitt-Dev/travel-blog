@@ -164,7 +164,7 @@ h1 {
 
 }
 
-.protipps-text {
+.protipps-box p {
     font-size: 28px;
     font-weight: 700;
     color: var(--button1-font-color);
@@ -177,9 +177,16 @@ h1 {
     padding: 26px 16px 24px 16px;
     border-radius: 30px;
     margin-left: 47px;
-
 }
 
+.protipps-main span {
+    font-weight: 700;
+    color: var(--global-link-color);
+}
+
+.protipps-main a {
+    text-decoration: none;
+}
 
 /*share section*/
 
