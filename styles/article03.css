@@ -317,6 +317,10 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     content: url(../assets/icons/share-button.png);
 }
 
+#mobile-title {
+        display: none;
+    }
+
 @media (max-width: 1279px) {
     .statistic-content {
        display: flex;
@@ -327,6 +331,10 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     
     .landing-content-right {
         height: 389px;
+    }
+
+    #desktop-title {
+        display: none;
     }
 }
 
