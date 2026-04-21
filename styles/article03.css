@@ -52,6 +52,21 @@ main {
     gap: 32px;
     display: flex;
     margin-top: 40px;
+    flex-direction: row;
+}
+
+.landing-comunity-left {
+    gap: 32px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+.landing-comunity-right {
+    gap: 32px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
 }
 
 .landing-comunity-content {
@@ -419,10 +434,25 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         font-size: 18px;
     }
 
-    .share-section-center-text-overlay img {
-        width: 50px;
-        height: 30.41px;
+    #desktop-title {
+        display: none;
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .landing-comunity {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .landing-comunity-left {
+        height: 18px;
+        gap: 16px;
+    }
+
+    .landing-comunity-right {
+        height: 18px;
+        gap: 16px;
+    }
+}
