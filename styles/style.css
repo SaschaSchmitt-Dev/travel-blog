@@ -105,6 +105,52 @@ h5 {
   color: var(--nav-primary-font-color);
 }
 
+.highlights-pseudo,
+.faq-pseudeo,
+.contact-pseudo {
+  position: relative;
+  display: inline-block;
+}
+
+.highlights-pseudo:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -14px;
+  width: 100%;
+  height: 32px;
+  transform: scaleX(110%);
+  background: url(../assets/icons/highlights-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.faq-pseudo:hover::after {
+  content: "";
+  position: absolute;
+  left: 56px;
+  bottom: 50px;
+  width: 100%;
+  height: 8px;
+  transform: scaleX(110%);
+  background: url(../assets/icons/faq-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contact-pseudo:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  width: 100%;
+  height: 16px;
+  transform: scaleX(110%);
+  background: url(../assets/icons/contact-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 
 /*Main Sections*/
 
