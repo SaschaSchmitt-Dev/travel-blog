@@ -33,7 +33,7 @@
     <main class="main">
         <landing-section class="landing-section">
             <div class="info-area">
-                <div class="info-top">
+                <div class="info-top-wrapper">
                     <div class="info-top-left">
                         <div class="info-top-left-head">
                             <h3>A Stylish Scandinavian Escape</h3>
@@ -42,18 +42,24 @@
                                 and waterfront living. Experience the heart of Scandinavia through cozy cafés,
                                 innovative cuisine, and effortlessly cool city life.</p>
                         </div>
-                        <div class="info-tags">
-                            <div class="tag-element t-one"><img src="./assets/icons/calendar_month.png" alt="Calendar">
-                                <p>Date: 16.04.2026</p>
+                        <div class="info-tags-wrapper">
+                            <div class="info-tags-left info-tags-gap">
+                                <div class="tag-element t-one"><img src="./assets/icons/calendar_month.png"
+                                        alt="Calendar">
+                                    <p>Date: 16.04.2026</p>
+                                </div>
+                                <div class="tag-element t-two"><img src="./assets/icons/eyeglasses-2.png"
+                                        alt="Eyeglasses">
+                                    <p>Reading time: 6min.</p>
+                                </div>
                             </div>
-                            <div class="tag-element t-two"><img src="./assets/icons/eyeglasses-2.png" alt="Eyeglasses">
-                                <p>Reading time: 6min.</p>
-                            </div>
-                            <div class="tag-element t-three"><img src="./assets/icons/visibility.png" alt="Eye">
-                                <p>Read: 164</p>
-                            </div>
-                            <div class="tag-element t-four"><img src="./assets/icons/share.png" alt="Share Logo">
-                                <p>Shared: 18</p>
+                            <div class="info-tags-right info-tags-gap">
+                                <div class="tag-element t-three"><img src="./assets/icons/visibility.png" alt="Eye">
+                                    <p>Read: 164</p>
+                                </div>
+                                <div class="tag-element t-four"><img src="./assets/icons/share.png" alt="Share Logo">
+                                    <p>Shared: 18</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,8 +158,11 @@
             <div class="share-section-center">
                 <div class="share-section-center-text">
                     <p>Follow me for more content like this, and share the article with your friends!</p>
-                    <div class="share-section-center-text-overlay">
+                    <div id="desktop-title" class="share-section-center-text-overlay">
                         <img src="./assets/icons/curvedline.png" alt="Curved Arrow">
+                    </div>
+                    <div id="mobile-title" class="share-section-center-text-overlay">
+                        <img src="./assets/icons-mobile/curvedline-mobile.png" alt="Curved Arrow">
                     </div>
                 </div>
                 <div class="share-button">
@@ -179,8 +188,8 @@
                     <p>Travel Blog 2026</p>
                 </div>
                 <div class="imprint-cookie">
-                    <a href="#">Imprint</a>
-                    <a href="#">Cookie Preferences</a>
+                    <p>Imprint</p>
+                    <p>Cookie Preferences</p>
                 </div>
             </div>
             <div class="footer-content-right">
@@ -191,6 +200,13 @@
             </div>
         </div>
     </footer>
+
+    <nav class="mobile-nav">
+        <a href="index.html"><img src="./assets/icons-mobile/home.png" alt="Home"></a>
+        <a href="#highlights"><img src="./assets/icons-mobile/rocket-launch.png" alt="Rocket"></a>
+        <a href="#faq"><img src="./assets/icons-mobile/live-help.png" alt="FAQ"></a>
+        <a href="#contact"><img src="./assets/icons-mobile/person-pin.png" alt="Contact"></a>
+    </nav>
 
 </body>
 
