@@ -111,13 +111,13 @@ h1 {
     line-height: 120%;
 }
 
+/*slider-section*/
+
 .top5-text {
     display: flex;
     justify-content: center;
     margin-bottom: 64px;
 }
-
-/*slider-section*/
 
 .slider {
     height: 440px;
@@ -148,12 +148,22 @@ h1 {
     transform: perspective(300px) rotateY(-16deg) translateX(20px);
 }
 
-.box {
+.loremtext-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.loremtext-left {
+    display: flex;
+    justify-content: start;
+    width: 1000px;
 }
 
 .loremtext {
+    font-family: 'Palanquin', regular;
     color: var(--article-p-color);
     font-size: 24px;
     font-weight: 400;
@@ -170,7 +180,7 @@ h1 {
 .protipps-section {
     display: flex;
     flex-direction: column;
-    padding: 65px 0 0 51px;
+    padding: 65px 0 0 47px;
 }
 
 .protipps-box {
@@ -224,19 +234,17 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 88px;
+    margin-bottom: 120px;
 }
 
 .share-section-center {
-    height: 154px;
-    width: 493px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    gap: 48px;
 }
 
-.share-text-center {
+.share-section-center-text {
     position: relative;
     width: 100%;
     max-width: 463px;
@@ -244,36 +252,80 @@ h1 {
     text-align: center;
 }
 
-.share-text-center p {
+.share-section-center-text p {
     font-family: 'Arima', latin;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 120%;
+    font-size: 1.5rem;
     color: var(--article-alternate-p-color);
 }
 
-.share-section-lineimg {
+.share-section-center-text-overlay {
     position: absolute;
     top: 50px;
-
 }
 
-
-.sharebutton {
-    height: 48px;
-    width: 158px;
-    border-radius: 40px;
-    background-color: var(--cb-active-border-color);
+.share-button details {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-.sharebutton p {
+.share-button details::details-content {
+    inline-size: 0;
+    overflow: hidden;
+    transition: content-visibility 1s allow-discrete, inline-size 1s;
+}
+
+.share-button details[open]::details-content {
+    inline-size: auto;
+}
+
+.share-button details>summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.share-button details:open>summary {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.share-button details>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.share-button details:open>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.share-button-inner-icon {
+    gap: 10px;
+    width: auto;
+}
+
+.share-button-inner-links a {
+    display: flex;
+    flex-direction: column;
     font-family: 'Arima', latin;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--global-h1-color);
-    letter-spacing: 5%;
-
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: var(--global-link-color);
 }
+
+details.shared-buttons-outer-icon[open] summary::after {
+    content: url(../assets/icons/share-button-smaller.png);
+}
+
+details.shared-buttons-outer-icon:not([open]) summary::after {
+    content: url(../assets/icons/share-button.png);
+}
+
+
+@media screen {}
