@@ -7,8 +7,7 @@
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 208px;
-    padding: 0px 120px 0px 120px;
+    padding: 208px 120px 0px 120px;
     gap: 88px;
     max-width: 1440px;
     width: 100%;
@@ -128,7 +127,6 @@ main {
     height: 440px;
     display: flex;
     justify-content: center;
-    margin-bottom: 88px;
 }
 
 .slider-element {
@@ -357,4 +355,108 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 }
 
 
-@media screen {}
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    .headline-section {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .card-women-center {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .card-women {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 345px;
+    }
+
+    .slider-element {
+        width: 200px;
+        transform: perspective(200px) rotateY(16deg) translateX(0);
+
+    }
+
+    .slider-element:hover {
+        transform: perspective(200px) rotateY(0deg) translateX(0);
+        margin: 0px 25px;
+    }
+
+    .slider-element:hover~.slider-element {
+        transform: perspective(200px) rotateY(-16deg) translateX(10px);
+    }
+
+    .protipps-section {
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+
+    .headline-section {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .headline-section-text h3 {
+        font-size: 20px;
+    }
+
+    .headline-section-text h1 {
+        font-size: 40px;
+    }
+
+
+    .headline-section-text p {
+        font-size: 18px;
+
+    }
+
+    .card-women-center {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .card-women {
+        display: flex;
+        justify-content: center;
+        width: 328px;
+        height: 345px;
+    }
+
+    .top5-text {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .slider-element {
+        width: 200px;
+        transform: perspective(200px) rotateY(16deg) translateX(0);
+
+    }
+
+    .slider-element:hover {
+        transform: perspective(200px) rotateY(0deg) translateX(0);
+        margin: 0px 25px;
+    }
+
+    .slider-element:hover~.slider-element {
+        transform: perspective(200px) rotateY(-16deg) translateX(10px);
+    }
+
+    .protipps-section {
+        padding: 0;
+    }
+}
