@@ -54,12 +54,12 @@
     --cb-active-bg-color: rgba(78, 164, 135, 1);
     --cb-active-font-color: rgba(241, 201, 83, 1);
 
-    /*Indicators*/
-    --carousel-active-indicator-bg-color: rgba(78, 164, 135, 1);
-    --carousel-inactive-indicator-bg-color: rgba(78, 164, 135, 0.3);
-
-    /*Mobile-Navbar*/
+    /*Mobile Navbar*/
     --navbar-bg-color: rgba(241, 201, 83, 1);
+
+    /*Mobile Slider Buttons*/
+    --carousel-active-button-color: rgba(78, 164, 135, 1);
+    --carousel-inactive-button-color: rgba(78, 164, 135, 0.3);
 
 
     --header-height: 128px;
