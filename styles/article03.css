@@ -19,8 +19,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
 }
 
 .landing-content-right div {
@@ -379,7 +377,9 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     .landing-content-right {
-        max-width: none;
+        max-width: 100%;
+        height: auto;
+        gap: 0;
         margin-top: 0px;
     }
 
@@ -532,7 +532,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         font-size: 1.125rem;
     }
 
-    @media (max-width: 355px) {
+    @media (max-width: 373px) {
         .landing-comunity-left{
             display: flex;
             flex-direction: column;
