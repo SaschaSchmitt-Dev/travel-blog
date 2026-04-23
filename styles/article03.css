@@ -418,6 +418,10 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     .landing-comunity-right {
         margin-top: 24px;
     }
+
+    .author-article {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
