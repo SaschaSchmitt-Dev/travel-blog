@@ -822,7 +822,10 @@ h5 {
 
 .cib-checkbox {
   display: flex;
+  flex-direction: column;
   position: relative;
+  height: 49px;
+  gap: 8px;
 }
 
 .checkbox-container {
@@ -884,11 +887,25 @@ h5 {
   transform: rotate(45deg);
 }
 
-.checkbox-submit {
+.checkbox-error {
+  display: none;
+}
+
+.cib-checkbox:has(.checkbox-privacy:invalid) .checkbox-error {
+  display: block;
+}
+
+.cib-checkbox:has(.checkbox-privacy:valid) .checkbox-error {
+  display: none;
+}
+
+.checkbox-error p {
+  font-size: 0.875rem;
   color: var(--error-mesage-font-color);
 }
 
-.submit-button {
+
+.send-button {
   background-color: inherit;
   width: 139px;
   border-radius: 40px;

@@ -193,38 +193,44 @@
                             you and explore how we can work together</span></h5>
                 </div>
 
-                <div class="contact-inputs">
-                    <div class="contact-inputs-top">
-                        <div class="contact-top-one">
-                            <div class="contact-top-textfield cto-label">
-                                <label for="name">What's your name?</label>
-                                <input type="text" id="name" name="name"></input>
+                <form action="mailto:example@mail.com" method="post" enctype="text/plain">
+                    <div class="contact-inputs">
+                        <div class="contact-inputs-top">
+                            <div class="contact-top-one">
+                                <div class="contact-top-textfield cto-label">
+                                    <label for="name">What's your name?</label>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                                <div class="contact-top-textfield cto-label">
+                                    <label for="email">What's your email?</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
                             </div>
-                            <div class="contact-top-textfield cto-label">
-                                <label for="email">What's your email?</label>
-                                <input type="email" id="email" name="email"></input>
+                            <div class="contact-top-two">
+                                <div class="contact-top-textfield cto-label-two">
+                                    <label for="help">How can i help?</label>
+                                    <textarea type="text" id="help" name="help"></textarea>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-top-two">
-                            <div class="contact-top-textfield cto-label-two">
-                                <label for="help">How can i help?</label>
-                                <textarea type="text" id="help" name="help"></textarea>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="contact-inputs-bottom">
-                        <div class="cib-checkbox">
-                            <label class="checkbox-container">I've read the
-                                <a href="">privacy policy</a>
-                                and agree to the processing of my data as outlined.
-                                <input type="checkbox" id="checkbox-submit" class="checkbox-submit" required></input>
-                                <span class="checkmark"></span>
-                            </label>
+                        <div class="contact-inputs-bottom">
+                            <div class="cib-checkbox">
+                                <label class="checkbox-container">I've read the
+                                    <a href="">privacy policy</a>
+                                    and agree to the processing of my data as outlined.
+                                    <input type="checkbox" id="checkbox-privacy" name="privacy" class="checkbox-privacy"
+                                        required>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="checkbox-error">
+                                    <p>Please accept the privacy policy.</p>
+                                </div>
+                            </div>
+                            <button type="submit" class="send-button">Send</button>
                         </div>
-                        <input type="submit" value="Send" class="submit-button" />
                     </div>
-                </div>
+                </form>
             </section>
         </section>
     </main>
