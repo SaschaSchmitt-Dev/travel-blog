@@ -3,7 +3,7 @@ main {
     flex-direction: column;
     width: 100%;
     max-width: 1440px;
-    margin-top: 208px;
+    margin-top: 80px;
     padding: 0 120px;
 }
 
@@ -71,6 +71,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 6px;
 }
 
 .landing-comunity-content p {
@@ -131,15 +132,15 @@ main {
 }
 
 .landing-section {
-    max-width: 1200px fill;
+    max-width: 1118px fill;
 }
 
 .landing-content {
-    max-width: 1200px fill;
+    max-width: 1118px fill;
 }
 
 .rain-periods-in-pattaya {
-    max-width: 1200px fill;
+    max-width: 1118px;
     margin-top: 88px;
 }
 
@@ -177,13 +178,25 @@ main {
 }
 
 .statistic-section {
-    max-width: 1200px;
-    margin-top: 88px;
+    max-width: 1118px;
+    gap: 88px;
 }
 
 .statistic-content {
     display: flex;
     justify-content: space-between;
+}
+
+.static-content-article {
+    gap: 24px;
+}
+
+.statistic-content-left h4 {
+    text-align: center;
+}
+
+.statistic-content-right h4 {
+    text-align: center;
 }
 
 .statistic-content-left {
@@ -235,6 +248,7 @@ main {
 
 .statistic-article {
     margin-top: 16px;
+    gap: 24px;
 }
 
 /*share section*/
@@ -367,8 +381,9 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 
 @media (max-width: 768px) {
     main {
-        margin-top: 144px;
+        margin-top: 24px;
         padding: 0px 15px;
+        gap: 0;
     }
 
     .landing-content-container {
