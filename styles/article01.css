@@ -7,7 +7,7 @@
 main {
     display: flex;
     flex-direction: column;
-    padding: 208px 120px 0px 120px;
+    padding: 80px 120px;
     gap: 88px;
     max-width: 1440px;
     width: 100%;
@@ -117,6 +117,13 @@ main {
 
 /*slider-section*/
 
+.slider-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .top5-text {
     display: flex;
     justify-content: center;
@@ -135,7 +142,7 @@ main {
     height: 440px;
     margin: 0px -50px;
 
-    transform: perspective(300px) rotateY(16deg) translateX(0);
+    transform: perspective(300px) rotateY(16deg) translateX(-20px);
     transform-origin: 50% 50%;
     transition: all 300ms ease-in-out;
 }
@@ -404,12 +411,13 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 
     .slider-responsive-section {
         position: relative;
-        width: 1200px;
+        width: 1280px;
         max-width: 100%;
         height: 400px;
-        padding: 20px;
         margin: 0 auto;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
     }
 
     .componet {
@@ -710,6 +718,10 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
+    main {
+        padding: 140px 15px 0px 15px;
+    }
+
     .headline-section {
         flex-wrap: wrap;
         display: flex;
@@ -776,13 +788,8 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     /*Slider Responsive*/
 
     .slider-responsive-section {
-        position: relative;
-        width: 1200px;
-        max-width: 100%;
-        height: 400px;
-        padding: 20px;
-        margin: 0 auto;
-        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
     }
 
     .componet {
@@ -793,6 +800,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         width: 100%;
         box-sizing: border-box;
         overflow: hidden;
+        gap: 64px;
     }
 
     .input.input {
@@ -1086,7 +1094,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 @media screen and (max-width: 480px) {
 
     main {
-        padding: 140px 15px 0px 15px;
+        padding: 24px 15px;
     }
 
     .headline-section {
