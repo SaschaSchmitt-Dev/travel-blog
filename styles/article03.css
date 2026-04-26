@@ -491,11 +491,6 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         font-size: 1.125rem;
     }
 
-    .landing-comunity-content {
-        display: flex;
-        gap: 16px;
-    }
-
     .landing-comunity {
         display: flex;
         flex-direction: column;
