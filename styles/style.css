@@ -1088,6 +1088,7 @@ h5 {
 }
 
 
+
 @media screen and (min-width: 769px) and (max-width: 1279px) {
 
   /* *header*/
@@ -1144,8 +1145,6 @@ h5 {
 
 
 
-
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
   /* *header*/
@@ -1157,12 +1156,8 @@ h5 {
   }
 
   .navbar ul {
-    gap: 18px;
-  }
-
-
-  .navbar {
-    display: none;
+    padding: 0 0 0 16px;
+    gap: 12px;
   }
 
   /* *hero*/
@@ -1266,8 +1261,6 @@ h5 {
   .highlights-slider-text h3 {
     font-size: 2rem;
   }
-
-
 
   .highlights-slider-text p {
     font-size: 1.25rem;

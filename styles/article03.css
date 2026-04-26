@@ -29,12 +29,12 @@ main {
 }
 
 .author-title-name {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
 .author-title-second-title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -48,7 +48,6 @@ main {
 .landing-comunity {
     gap: 32px;
     display: flex;
-    margin-top: 40px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -56,14 +55,12 @@ main {
 .landing-comunity-left {
     gap: 32px;
     display: flex;
-    margin-top: 40px;
     flex-direction: row;
 }
 
 .landing-comunity-right {
     gap: 32px;
     display: flex;
-    margin-top: 40px;
     flex-direction: row;
 }
 
@@ -107,6 +104,12 @@ main {
     justify-content: center;
 }
 
+.landing-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .title-info {
     font-size: 1.75rem;
     font-family: 'Palanquin', latin;
@@ -123,25 +126,24 @@ main {
 }
 
 .landing-article {
-    margin-top: 48px;
     font-family: 'Palanquin', latin;
     font-size: 1.5rem;
     color: var(--article-p-color);
     line-height: 120%;
-    width: 1200px fill;
-}
-
-.landing-section {
-    max-width: 1118px fill;
 }
 
 .landing-content {
-    max-width: 1118px fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .rain-periods-in-pattaya {
-    max-width: 1118px;
-    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
 }
 
 .rain-content {
@@ -149,7 +151,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 24px;
 }
 
 .rain-content h4 {
@@ -162,11 +164,6 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 53px;
-    margin-top: 24px;
-}
-
-.rain-article {
-    margin-top: 88px;
 }
 
 .rain-article p {
@@ -178,16 +175,20 @@ main {
 }
 
 .statistic-section {
-    max-width: 1118px;
+    display: flex;
+    flex-direction: column;
     gap: 88px;
 }
 
 .statistic-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
 }
 
 .static-content-article {
+    display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -247,7 +248,6 @@ main {
 }
 
 .statistic-article {
-    margin-top: 16px;
     gap: 24px;
 }
 
@@ -256,7 +256,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-bottom: 120px;
 }
 
@@ -369,69 +368,72 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     .landing-content-right {
         height: 389px;
     }
-
-    .landing-comunity-left {
-        margin-top: 0;
-    }
-
-    .landing-comunity-right {
-        margin-top: 0;
-    }
 }
 
 @media (max-width: 768px) {
     main {
         margin-top: 24px;
         padding: 0px 15px;
-        gap: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .rain-periods-in-pattaya {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
     }
 
     .landing-content-container {
         display: flex;
         flex-direction: column;
+        gap: 24px;
     }
 
     .landing-content-right {
         max-width: 100%;
         height: auto;
-        gap: 0;
-        margin-top: 0px;
     }
 
     .landing-comunity {
+        display: flex;
+        flex-direction: column;
         gap: 16px;
     }
 
-    .title-info {
-        margin-top: 24px;
+    .info-landing-left {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     .landing-comunity-content {
+        display: flex;
         gap: 6px;
     }
 
     .statistic-section {
-        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .statistic-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 
     .statistic-content-left {
-        margin-bottom: 32px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
     }
 
     .statistic-content-left h4 {
-        margin-bottom: 16px;
-    }
-
-    .statistic-content-right h4 {
-        margin-bottom: 16px;
-    }
-
-    .landing-comunity-left {
-        margin-top: 24px;
-    }
-
-    .landing-comunity-right {
-        margin-top: 24px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
     }
 
     .author-article {
@@ -441,27 +443,23 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 
 @media (max-width: 480px) {
     .share-section {
-        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .rain-content img {
         border-radius: 30px;
     }
 
-    .rain-article {
-        margin-top: 32px;
-    }
-
     .info-landing-left h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .info-landing-left h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .info-landing-left p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .landing-article {
@@ -470,19 +468,15 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     .rain-content h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .rain-article p {
         font-size: 1rem;
     }
 
-    .rain-periods-in-pattaya {
-        margin-top: 32px;
-    }
-
     .static-content-article h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .static-content-article p {
@@ -494,28 +488,23 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     .share-section-center-text p {
-        font-size: 18px;
-    }
-
-    .landing-comunity-content {
-        gap: 16px;
+        font-size: 1.125rem;
     }
 
     .landing-comunity {
         display: flex;
         flex-direction: column;
-        margin: 0;
     }
 
     .landing-comunity-left {
+        display: flex;
         gap: 16px;
     }
 
     .landing-comunity-right {
         height: 18px;
+        display: flex;
         gap: 16px;
-        margin-top: 0;
-        margin-bottom: 24px;
     }
 
     .statistic-article p {
@@ -552,7 +541,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     @media (max-width: 373px) {
-        .landing-comunity-left{
+        .landing-comunity-left {
             display: flex;
             flex-direction: column;
         }
