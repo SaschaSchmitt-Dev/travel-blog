@@ -1,0 +1,11 @@
+.background-mf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100dvh;
+    margin-bottom: auto;
+}
+
+.background-mf img {
+    width: 100%;
+}
