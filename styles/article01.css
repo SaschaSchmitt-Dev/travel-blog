@@ -363,7 +363,9 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     content: url(../assets/icons/share-button.png);
 }
 
-
+#desktop-title {
+    display: flex;
+}
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
 
