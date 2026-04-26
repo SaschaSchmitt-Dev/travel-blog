@@ -1146,7 +1146,6 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     .card-women {
         justify-content: center;
         width: 100%;
-        height: 345px;
     }
 
     .card-women p {
