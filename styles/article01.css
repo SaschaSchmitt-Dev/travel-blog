@@ -796,6 +796,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         height: 400px;
         margin: 0 auto;
         box-sizing: border-box;
+        overflow: hidden;
         display: flex;
         justify-content: center;
     }
