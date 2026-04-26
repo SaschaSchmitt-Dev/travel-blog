@@ -370,6 +370,19 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 }
 
+@media (max-width: 1024px) {
+    .landing-content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .landing-content-right {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         margin-top: 24px;
@@ -382,17 +395,6 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         display: flex;
         flex-direction: column;
         gap: 33px;
-    }
-
-    .landing-content-container {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .landing-content-right {
-        max-width: 100%;
-        height: auto;
     }
 
     .landing-comunity {
