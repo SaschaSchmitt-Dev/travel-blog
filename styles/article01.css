@@ -115,23 +115,23 @@ main {
     line-height: 120%;
 }
 
-/*slider-section*/
+
+/*Slider Section*/
 
 .slider-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
 
-.top5-text {
+.slider-section h4 {
     display: flex;
     justify-content: center;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
 }
 
 .slider {
-    height: 440px;
     display: flex;
     justify-content: center;
 }
@@ -139,23 +139,20 @@ main {
 .slider-element {
     z-index: 1;
     width: 300px;
-    height: 440px;
     margin: 0px -50px;
-
-    transform: perspective(300px) rotateY(16deg) translateX(-20px);
-    transform-origin: 50% 50%;
+    transform: perspective(1000px) rotateY(16deg) translateX(0);
     transition: all 300ms ease-in-out;
 }
 
 .slider-element:hover {
     z-index: 2;
-    transform: perspective(300px) rotateY(0deg) translateX(0);
+    transform: perspective(1000px) rotateY(0deg) translateX(0);
     transform: scale(110%);
     margin: 0px 50px;
 }
 
 .slider-element:hover~.slider-element {
-    transform: perspective(300px) rotateY(-16deg) translateX(20px);
+    transform: perspective(1000px) rotateY(-16deg) translateX(20px);
 }
 
 .slider-button {
@@ -366,11 +363,9 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     content: url(../assets/icons/share-button.png);
 }
 
-
-
-
-
-
+#desktop-title {
+    display: flex;
+}
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
 
@@ -403,13 +398,14 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         height: 345px;
     }
 
-    .top5-text {
-        margin: 0;
+    .shared-line {
+        flex-wrap: wrap;
+        line-height: 16px;
     }
 
     /*Slider Responsive*/
 
-    .slider-responsive-section {
+    .slider-responsive {
         position: relative;
         width: 1280px;
         max-width: 100%;
@@ -417,7 +413,11 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         margin: 0 auto;
         box-sizing: border-box;
         display: flex;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-section h4 {
+        padding-bottom: 40px;
     }
 
     .componet {
@@ -428,6 +428,8 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         width: 100%;
         box-sizing: border-box;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
     .input.input {
@@ -505,22 +507,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-1:checked~.items label[for="item-2"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-1:checked~.items label[for="item-3"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-1:checked~.items label[for="item-4"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-1:checked~.items label[for="item-5"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -551,22 +553,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-2:checked~.items label[for="item-3"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-2:checked~.items label[for="item-4"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-2:checked~.items label[for="item-5"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-2:checked~.items label[for="item-1"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -597,24 +599,23 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-3:checked~.items label[for="item-4"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-3:checked~.items label[for="item-5"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-3:checked~.items label[for="item-1"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-3:checked~.items label[for="item-2"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
-        3
     }
 
 
@@ -645,22 +646,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-4:checked~.items label[for="item-5"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-4:checked~.items label[for="item-1"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-4:checked~.items label[for="item-2"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-4:checked~.items label[for="item-3"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -691,22 +692,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-5:checked~.items label[for="item-1"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-5:checked~.items label[for="item-2"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-5:checked~.items label[for="item-3"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-5:checked~.items label[for="item-4"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -719,7 +720,8 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     main {
-        padding: 140px 15px 0px 15px;
+        padding: 24px 15px;
+        gap: 40px;
     }
 
     .headline-section {
@@ -787,9 +789,20 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 
     /*Slider Responsive*/
 
-    .slider-responsive-section {
+    .slider-responsive {
+        position: relative;
+        width: 768px;
+        max-width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
+    }
+
+    .slider-section h4 {
+        padding-bottom: 20px;
+        font-size: 20px;
     }
 
     .componet {
@@ -800,7 +813,8 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         width: 100%;
         box-sizing: border-box;
         overflow: hidden;
-        gap: 64px;
+        display: flex;
+        justify-content: center;
     }
 
     .input.input {
@@ -848,7 +862,6 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         height: 13px;
         margin-right: 8px;
         border-radius: 50%;
-        background: #444;
         cursor: pointer;
     }
 
@@ -879,22 +892,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-1:checked~.items label[for="item-2"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-1:checked~.items label[for="item-3"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-1:checked~.items label[for="item-4"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-1:checked~.items label[for="item-5"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -925,22 +938,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-2:checked~.items label[for="item-3"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-2:checked~.items label[for="item-4"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-2:checked~.items label[for="item-5"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-2:checked~.items label[for="item-1"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -971,24 +984,23 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-3:checked~.items label[for="item-4"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-3:checked~.items label[for="item-5"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-3:checked~.items label[for="item-1"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-3:checked~.items label[for="item-2"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
-        3
     }
 
 
@@ -1019,22 +1031,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-4:checked~.items label[for="item-5"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-4:checked~.items label[for="item-1"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-4:checked~.items label[for="item-2"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-4:checked~.items label[for="item-3"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -1065,22 +1077,22 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-5:checked~.items label[for="item-1"] {
-        transform: translate3d(200px, 0, -100px) rotateY(20deg);
+        transform: translate3d(180px, 0, -100px) rotateY(25deg);
         z-index: 2;
     }
 
     #item-5:checked~.items label[for="item-2"] {
-        transform: translate3d(370px, 0, -200px) rotateY(40deg);
+        transform: translate3d(320px, 0, -200px) rotateY(50deg);
         z-index: 1;
     }
 
     #item-5:checked~.items label[for="item-3"] {
-        transform: translate3d(-370px, 0, -200px) rotateY(-40deg);
+        transform: translate3d(-320px, 0, -200px) rotateY(-50deg);
         z-index: 1;
     }
 
     #item-5:checked~.items label[for="item-4"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-180px, 0, -100px) rotateY(-25deg);
         z-index: 2;
     }
 
@@ -1095,6 +1107,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
 
     main {
         padding: 24px 15px;
+        gap: 40px;
     }
 
     .headline-section {
@@ -1134,36 +1147,38 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         height: 345px;
     }
 
-    .top5-text h4 {
+    .card-women p {
+        text-align: center;
+    }
+
+    .slider-section h4 {
         font-size: 20px;
         display: flex;
         justify-content: center;
-    }
-
-    .top5-text {
-        margin: 0;
+        padding-bottom: 20px;
     }
 
     /*Slider Responsive*/
 
-    .slider-responsive-section {
+    .slider-responsive {
         position: relative;
         width: 1200px;
         max-width: 100%;
         height: 400px;
-        padding: 20px;
         margin: 0 auto;
         box-sizing: border-box;
     }
 
     .componet {
-        position: absolute;
+        position: relative;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%) scale(110%);
         width: 100%;
         box-sizing: border-box;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
     .input.input {
@@ -1203,7 +1218,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     .nav {
         display: flex;
         justify-content: center;
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .dot {
@@ -1351,7 +1366,6 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     #item-3:checked~.items label[for="item-2"] {
         transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
         z-index: 2;
-        3
     }
 
 
@@ -1456,6 +1470,11 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
         font-size: 18px;
     }
 
+    .share-section-center-text img {
+        position: relative;
+        top: 20px;
+    }
+
     #mobile-title {
         display: flex;
     }
@@ -1467,5 +1486,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     .protipps-section {
         padding: 0;
     }
+
+
 
 }
