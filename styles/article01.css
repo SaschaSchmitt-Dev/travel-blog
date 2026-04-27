@@ -252,6 +252,8 @@ main {
 }
 
 .protipps-main a {
+    font-weight: 700;
+    color: var(--global-link-color);
     text-decoration: none;
 }
 
