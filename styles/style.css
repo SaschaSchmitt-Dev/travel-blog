@@ -1004,6 +1004,7 @@ h5 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--send-button-color);
+  cursor: pointer;
 }
 
 
