@@ -1369,7 +1369,7 @@ details.shared-buttons-outer-icon:not([open]) summary::after {
     }
 
     #item-3:checked~.items label[for="item-2"] {
-        transform: translate3d(-200px, 0, -100px) rotateY(-20deg);
+        transform: translate3d(-200px, 0, -100px) rotateY(20deg);
         z-index: 2;
     }
 
